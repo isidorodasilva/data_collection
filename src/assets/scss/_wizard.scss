@@ -14,8 +14,6 @@
 	bottom: $bottom;
 }
 
-
-
 //multisteps progress styles
 .multisteps-form__progress {
 	background-image: url(../img/step-bg.png);
@@ -181,8 +179,6 @@
     }
 }
 
-
-
 .wizard-part-title {
 	h3 {
 		color: $color-primary;
@@ -195,9 +191,16 @@
 .badge-selection {
 	margin: 0 auto;
 	max-width: 1090px;
+	margin-bottom: 20px;
 
 	label {
 		margin-right: 30px;
+		font-weight: 500;
+		font-size: x-large;
+	}
+
+	.titulo {
+		margin-bottom: 20px;
 	}
 
 	input {
@@ -243,7 +246,7 @@
 			.progress-bar {
 				top: 2px;
 				left: 2px;
-				width: 30%;
+				width: 33%;
 				height: 18px;
 				position: absolute;
 				border-radius: 80px;
@@ -285,6 +288,7 @@
 		border: none;
 		overflow: visible;
 		padding-left: 40px;
+		padding-right: 50px;
 		border-radius: 3px;
 		margin-bottom: 28px;
 		transition: .3s all ease-out;
@@ -300,30 +304,83 @@
 	select {
 		@extend input;
 		height: 80px !important;
+		text-overflow: ellipsis;
 	}
 
 	.wizard-form-input {
+
 		input::-webkit-input-placeholder {
 			font-size: 20px;
 			font-weight: 500;
 			transition: .3s all ease-out;
 		}
 
+		
+	}
+
+	.row {
+
+		.col-md-1 {
+			font-family: $heading;
+			color: $color-primary;
+			font-weight: 600;
+		}
+
+		.col-md-6 {
+			label {
+				font-size: x-large;
+				font-weight: 500;
+			}
+		}
+
+		.step-content-field {
+		
+			.date-picker {
+				position: relative;
+		
+				input {
+					height: 60px;
+					width: 100%;
+					padding-left: 120px;
+					padding-right: 10px;
+					border: 2px solid #ededed;
+					font-weight: 500;
+				}
+		
+				&:before {
+					top: 15px;
+					left: 25px;
+					content: '\f073';
+					font-size: 20px;
+					color: $color-primary;
+					font-weight: 900;
+					position: absolute;
+					font-family: 'Font Awesome 5 Free';
+				}
+		
+				&:after {
+					content: '';
+					top: 24px;
+					left: 80px;
+					height: 20px;
+					width: 2px;
+					position: absolute;
+					background-color: $color-primary;
+				}
+			}
+		}
 	}
 }
-
 
 .wizard-footer {
 	min-height: 350px;
 }
 
 .wizard-imgbg {
-	left: -20px;
+	left: 8%;
 	bottom: 30px;
 	position: absolute;
 }
-
-
 
 .wizard-option-list {
 	margin: 0 auto;
@@ -486,8 +543,6 @@
 		position: relative;
 	}
 }
-
-
 
 .wizard-identity-box {
 	box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.16);

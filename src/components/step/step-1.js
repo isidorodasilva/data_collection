@@ -10,7 +10,7 @@ class StepOne extends React.Component {
         <div className="inner pb-100">
           <div className="wizard-topper">
             <div className="wizard-progress">
-              <span>1 de 2 Completo</span>
+              <span>1 de 3 Completo</span>
               <div className="progress">
                 <div className="progress-bar"></div>
               </div>
@@ -35,7 +35,7 @@ class StepOne extends React.Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                  <label>Escritório responsável do Ipas *</label>
+                  <label className="label">Escritório responsável do Ipas *</label>
                 </div>
                 <div className="col-md-6">
                   <div className="wizard-form-input position-relative form-group has-float-label mt-0 n-select-option">
@@ -146,11 +146,11 @@ class StepOne extends React.Component {
                       name="country"
                       className="form-control"
                     >
-                      <option value="">
+                      <option value="Bergstrom SRH in Mozambique 1/1/19 to 3/31/22">
                         Bergstrom SRH in Mozambique 1/1/19 to 3/31/22
                       </option>
-                      <option value="">
-                        Sida Mozambique- Expanding Women's and Girls Access to
+                      <option value="Sida Mozambique - Expanding Women's and Girls Access to Comprehensive Abortion and Contraceptive Care">
+                        Sida Mozambique - Expanding Women's and Girls Access to
                         Comprehensive Abortion and Contraceptive Care
                       </option>
                     </select>
@@ -270,7 +270,7 @@ class StepOne extends React.Component {
               </div>
             </div>
             <div className="badge-selection">
-              <label>Tipo de actividade</label>
+              <label className="titulo">Tipo de actividade</label>
               <label className="col-md-12">
                 <input type="radio" defaultChecked name="tipo_actividade" />
                 <span className="checkmark">
@@ -330,19 +330,19 @@ class StepOne extends React.Component {
                 <label>Número total de pessoas alcançadas *</label>
               </div>
               <div className="row">
-                <div className="col-md-1">Data de inicio *</div>
+                <div className="col-md-1">Data de ínicio*</div>
                 <div className="step-content-field col-md-5">
                   <div className="date-picker date datepicker">
-                    <input type="text" name="date" className="form-control" />
+                    <input type="text" name="date" className="form-control" autoComplete="off"/>
                     <div className="input-group-append">
                       <span>ADD TIME</span>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-1">Data de término *</div>
+                <div className="col-md-1">Data de término*</div>
                 <div className="step-content-field col-md-5">
                   <div className="date-picker date datepicker">
-                    <input type="text" name="date" className="form-control" />
+                    <input type="text" name="date" className="form-control" autoComplete="off"/>
                     <div className="input-group-append">
                       <span>ADD TIME</span>
                     </div>
@@ -360,6 +360,7 @@ class StepOne extends React.Component {
               </div>
             </div>
           </div>
+          
           <div className="badge-selection">
             <label>
               Algum objectivo da atividade é mudar conhecimentos ou atitudes?
@@ -373,11 +374,13 @@ class StepOne extends React.Component {
               <span className="checkmark">Não</span>
             </label>
           </div>
+          
           <div className="badge-selection">
             <label>
               Algum objectivo da atividade é mudar conhecimentos ou atitudes?
             </label>
           </div>
+          
           <div className="wizard-option-list wizard-content-form">
             <div className="taxable-area">
               <div className="row my-3">
@@ -552,14 +555,14 @@ class StepOne extends React.Component {
           </div>
 
           <div className="wizard-footer">
-            <div className="wizard-imgbg">
+            {/* <div className="wizard-imgbg">
               <img src={require("../../assets/img/v3.png")} alt="" />
-            </div>
+            </div> */}
             <div className="actions">
               <ul>
                 <li>
                   <span className="js-btn-next" title="NEXT">
-                    NEXT <i className="fa fa-arrow-right"></i>
+                    Próximo <i className="fa fa-arrow-right"></i>
                   </span>
                 </li>
               </ul>

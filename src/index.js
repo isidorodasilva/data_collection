@@ -5,7 +5,7 @@ import './assets/css/fontawesome-all.css';
 import './assets/css/animate.min.scss';
 
 //main css
-import './assets/scss/style.css';
+import './assets/scss/style.scss';
 
 import 'bootstrap';
 

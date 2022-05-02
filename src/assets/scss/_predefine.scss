@@ -494,6 +494,33 @@ select.form-control {
     }
 }
 
+.date-picker {
+
+    span {
+        border-radius: 0;
+        position: absolute;
+        top: 16px;
+        right: 15px;
+        display: block;
+        min-width: 120px;
+        text-align: center;
+        background: $color-primary;
+        padding: 6px;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
+
+.datepicker {
+
+    td,
+    th {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.85rem;
+    }
+}
 
 // form focus animation
 
