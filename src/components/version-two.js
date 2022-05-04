@@ -1,14 +1,18 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import Step1 from './step/step-1';
 import Step2 from './step/step-2';
 import Step3 from './step/step-3';
 // import Step4 from './step/step-4';
 // import Step5 from './step/step-5';
 
-class VersionTwo extends React.Component {
-    render() {
+export const HeaderContext = React.createContext()
+
+function VersionTwo() {
+    const [a9, setA9] = useState();
+    
         return (
+            <HeaderContext.Provider value={{a9, setA9}}>
             <div className="wrapper clearfix">
                 <div className="wizard-part-title">
                     <h3>Actividade Geral</h3>
@@ -38,8 +42,9 @@ class VersionTwo extends React.Component {
                     </div>
                 </div>
             </div>
+            </HeaderContext.Provider>
         )
-    }
+    
 };
 
 
